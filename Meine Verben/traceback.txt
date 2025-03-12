@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 350, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 350, in prepare
+    screen main_menu():
+  File "game/screens.rpy", line 353, in prepare
+    on "show" action Play("menu soundtrack.mp3")
+  File "game/screens.rpy", line 353, in prepare
+    on "show" action Play("menu soundtrack.mp3")
+  File "game/screens.rpy", line 353, in <module>
+    on "show" action Play("menu soundtrack.mp3")
+TypeError: __init__() missing 1 required positional argument: 'file'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\Ren'Py\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\Ren'Py\renpy\main.py", line 652, in main
+    run(restart)
+  File "D:\Ren'Py\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "D:\Ren'Py\renpy\display\screen.py", line 1024, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 350, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 350, in prepare
+    screen main_menu():
+  File "game/screens.rpy", line 353, in prepare
+    on "show" action Play("menu soundtrack.mp3")
+  File "game/screens.rpy", line 353, in prepare
+    on "show" action Play("menu soundtrack.mp3")
+  File "D:\Ren'Py\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 353, in <module>
+    on "show" action Play("menu soundtrack.mp3")
+TypeError: __init__() missing 1 required positional argument: 'file'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.4.24120703
+Meine Verben 
+Wed Mar 12 01:46:48 2025

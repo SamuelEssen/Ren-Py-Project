@@ -297,6 +297,7 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            textbutton _("Story") action Start("story_script")
 
         else:
 
@@ -1109,8 +1110,10 @@ screen gamepad_help():
 style help_button is gui_button
 style help_button_text is gui_button_text
 style help_label is gui_label
-style help_label_text is gui_label_text
-style help_text is gui_text
+style help_label_text:
+    font "DejaVuSans.ttf"
+style help_text:
+    font "DejaVuSans.ttf"
 
 style help_button:
     properties gui.button_properties("help_button")

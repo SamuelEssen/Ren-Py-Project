@@ -5,6 +5,9 @@
 
     "Memorise three forms of verbs and choose the correct one for a sentence"
 
+label bleiben_retry:
+    scene bg lake
+
     "Bleiben — Blieb — (ist) Geblieben"
 
     window show
@@ -13,14 +16,14 @@
     menu:
         "David ist noch eine Woche in Klagenfurt __?__"
         "gebleiben":
-            "❌Nah, das ist falsch! Noch einmal."
-            jump start
+            "❌ Nah, das ist falsch! Noch einmal."
+            jump bleiben_retry
         "gebliebt":
-            "❌Meinst du das ernst?!"
-            jump start
+            "❌ Meinst du das ernst?!"
+            jump bleiben_retry
         "geblieben":
-            "👏Gut gemacht!"
-            "✅David ist noch eine Woche in Klagenfurt geblieben."
+            "👏 Gut gemacht!"
+            "✅ David ist noch eine Woche in Klagenfurt geblieben."
             jump bringen
 
 label bringen:
@@ -28,19 +31,19 @@ label bringen:
     scene bg village
     "Bringen — Brachte — (hat) Gebracht"
 
-    "Mein Bruder hat mir heute Morgen eine Kiste Mandarinen __?__"
+    "Mein Bruder hat mir heute morgen eine Kiste Mandarinen __?__"
 
     menu:
         "Mein Bruder hat mir heute Morgen eine Kiste Mandarinen __?__"
         "Brachte":
-            "❌Hey! Come on!"
+            "❌ Hey! Come on!"
             jump bringen
         "Gebracht":
-            "👏Super!"
-            "✅Mein Bruder hat mir heute Morgen eine Kiste Mandarinen gebracht."
+            "👏 Super!"
+            "✅ Mein Bruder hat mir heute Morgen eine Kiste Mandarinen gebracht."
             jump denken
         "Gebraucht":
-            "❌Oops! Noch einmal."
+            "❌ Oops! Noch einmal."
             jump bringen
 
 label denken:
@@ -53,14 +56,14 @@ label denken:
     menu:
         "Ich habe __?__, dass du zu Hause bist."
         "Gedacht":
-            "👏Sehr gut!"
-            "✅Ich habe gedacht, dass du zu Hause bist."
+            "👏 Sehr gut!"
+            "✅ Ich habe gedacht, dass du zu Hause bist."
             jump essen
         "Gedenken":
-            "❌Bitte?"
+            "❌ Bitte?"
             jump denken
         "Gedenken":
-            "❌Was hast du gesagt?"
+            "❌ Was hast du gesagt?"
             jump denken
     
 label essen:
@@ -76,14 +79,14 @@ label essen_retry:
 
     menu:
         "Gesessen":
-            "❌Was??? Was haben sie gemacht?"
+            "❌ Was??? Was haben sie gemacht?"
             jump essen_retry
         "Gegessen":
-            "👏Ja, ganz genau!"
-            "✅Die Kinder haben schon in der Schule gegessen."
+            "👏 Ja, ganz genau!"
+            "✅ Die Kinder haben schon in der Schule gegessen."
             jump fahren
         "Gegesst":
-            "❌Das ist fast richtig. Versuche es noch einmal."
+            "❌ Das ist fast richtig. Versuche es noch einmal."
             jump essen_retry
 
 label fahren:
@@ -94,17 +97,17 @@ label fahren:
 
     menu:
         "hat Gefahrt":
-            "❌Nicht ganz."
+            "❌ Nicht ganz."
             jump fahren
         "ist Gefuhr":
-            "❌Oh nein!"
+            "❌ Oh nein!"
             jump fahren
         "Ist gefahren":
-            "👏Sehr schön!"
-            "✅Julia ist gestern für eine Woche nach Wien gefahren."
+            "👏 Sehr schön!"
+            "✅ Julia ist gestern für eine Woche nach Wien gefahren."
             jump ending
         "Hat gefahren":
-            "❌Bist du sicher?"
+            "❌ Bist du sicher?"
             jump fahren
 
 label ending:
